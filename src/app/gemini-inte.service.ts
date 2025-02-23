@@ -10,7 +10,7 @@ export class GeminiInteService {
   private messageHistory: BehaviorSubject<any>=new BehaviorSubject(null);
   private generativeAI:GoogleGenerativeAI;
   constructor() { 
-    this.generativeAI=new GoogleGenerativeAI('AIzaSyBsBpCFGNqdJrYXeH0mw89nuvwJaUJzKuw')
+    this.generativeAI=new GoogleGenerativeAI('API KEY')
   }
 
   async generateText(prompt:string){
